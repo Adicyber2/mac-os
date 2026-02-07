@@ -21,7 +21,7 @@ const DateTime = () => {
 
   return (
     <span>
-      {`${day} ${month} ${date}${hours}:${minutes}${ampm}`}
+      {`${day} ${month} ${date}  ${hours}:${minutes} ${ampm}`}
     </span>
   );
 };

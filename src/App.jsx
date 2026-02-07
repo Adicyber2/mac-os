@@ -1,6 +1,7 @@
 import React from 'react'
 import Dock from "./components/Dock"
 import Nav from "./components/NavBar"
+import MacWindows from './components/windows/MacWindows'
 import "./app.scss"
 
 const App = () => {
@@ -8,6 +9,10 @@ const App = () => {
     <main>
       <Nav/>
       <Dock/>
+
+      <MacWindows>
+        <h1>hello</h1>
+      </MacWindows>
     </main>
   )
 }

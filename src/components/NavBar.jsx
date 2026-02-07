@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav>
         <div className="left">
             <div className="apple-icons">
-                <img src="/Navbar-icon/apple.svg" alt="" />
+                <img src="./Navbar-icon/apple.svg" alt="" />
             </div>
 
             <div className="nav-item">
@@ -28,7 +28,7 @@ const NavBar = () => {
 
         <div className="right">
             <div className="nav-icon">
-                <img src="/Navbar-icon/wifi.svg" alt="" />
+                <img src="./Navbar-icon/wifi.svg" alt="" />
             </div>
 
             <div className="nav-item">
