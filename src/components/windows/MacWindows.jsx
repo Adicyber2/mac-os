@@ -1,24 +1,33 @@
-import React from 'react'
+import {useState} from 'react'
 import {Rnd} from 'react-rnd'
 import "./MacWindow.scss"
-const MacWindows = ({children,width="40vw",height="40vw"}) => {
+const MacWindows = ({children, windowName,setWindowState}) => {
+const [size, setSize] = useState({
+    width:"40vw",height:"40vw",
+})
+
   return (
     <Rnd  
-      default={{
-            width:width,
-            height:height,
-            x:300,
-            y:200
-        }}
+        size={size}
+    //   default={{
+           
+    //         x:300,
+    //         y:200
+    //     }}
     >
         
       
 
-        <div className="window">
+        <div className="window" >
             <div className="nav"> 
                 <div className="dots">
-                    <div className="dot red"></div>
-                    <div className="dot yellow"></div>
+                    <div onClick={()=> setWindowState(state =>({...state,[windowName]:false}))} className="dot red"></div>
+                    <div onClick={()=>setSize({
+                        height:"100vh",
+                        width:"100vw",
+                       
+                    })
+                    } className="dot yellow"></div>
                     <div className="dot green"></div>
                 </div>
 
